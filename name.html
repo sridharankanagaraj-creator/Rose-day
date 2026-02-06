@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Your Name</h1>
+        <form action="bouquet.html" method="get">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+   <audio id="bgm" loop>
+    <source src="audio (3).mp3.mpeg" type="audio/mpeg">
+</audio>
+
+<script>
+const audio = document.getElementById("bgm");
+
+if (localStorage.getItem("playMusic") === "yes") {
+    audio.play();
+}
+
+document.addEventListener("click", () => {
+    audio.play();
+    localStorage.setItem("playMusic", "yes");
+});
+</script>
+
+</body>
+</html>

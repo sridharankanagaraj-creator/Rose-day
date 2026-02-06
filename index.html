@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose Day Celebration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Rose Day!</h1>
+        <p>Celebrate the beauty of roses and love.</p>
+        <a href="name.html" class="btn">Enter</a>
+    </div>
+<audio id="bgm" loop>
+    <source src="audio (3).mp3.mpeg" type="audio/mpeg">
+</audio>
+
+<script>
+const audio = document.getElementById("bgm");
+
+if (localStorage.getItem("playMusic") === "yes") {
+    audio.play();
+}
+
+document.addEventListener("click", () => {
+    audio.play();
+    localStorage.setItem("playMusic", "yes");
+});
+</script>
+
+
+
+
+</body>
+
+</body>
+</html>

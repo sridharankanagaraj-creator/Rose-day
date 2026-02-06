@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Your Wish</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My dear wifeyy </h1>
+        <form action="bouquet.html" method="post">
+            <textarea name=" first naa yeathu pesiruathha sorry athu una hurt panirutha romba sorry da ma 
+           una hurt panum nu solla ma sariya but yenaku therium athu una hurt panirukum nu sorry da thangoo manichiko da ma 
+           and inakki Rose day enala nerla kuduka mudila so naa unaku ithu mari anuprinken ma I love you di kundu's love you so much di pondatti"
+        <required> "first naa yeathu pesiruathha sorry athu una hurt panirutha romba sorry da ma 
+           una hurt panum nu solla ma sariya but yenaku therium athu una hurt panirukum nu sorry da thangoo manichiko da ma 
+           and inakki Rose day enala nerla kuduka mudila so naa unaku ithu mari anuprinken ma I love you di kundu's love you so much di pondatti"</textarea>
+        </form>
+    </div>
+    <audio id="bgm" loop>
+    <source src="audio (3).mp3.mpeg" type="audio/mpeg">
+</audio>
+
+<script>
+const audio = document.getElementById("bgm");
+
+if (localStorage.getItem("playMusic") === "yes") {
+    audio.play();
+}
+
+document.addEventListener("click", () => {
+    audio.play();
+    localStorage.setItem("playMusic", "yes");
+});
+</script>
+
+
+</body>
+</html>
